@@ -11,21 +11,25 @@ General reminders:
     <link rel="shortcut icon" href="#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="this will show up on google">   
+    <meta name="description" content="Get random dog pictures by breed!">   
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <h1>Get random pictures of a dog breed!</h1>
+    <h1>🐕 Get random dog pictures by breed! 🐩</h1>
     <main>
       <form class="dog-pic-form">
-        <input id="breed-input" name="Choose a breed" type="text" required>
+        <h2>Random Dog Breed Image Generator</h2>
+        <p>Type a dog breed name in the box below.</p>
+        <p class="secondary">To search by sub-breed, first enter the master breed and click submit. Available sub-classes for selection will then appear.</p>
+        <input id="breed-input" name="Choose a breed" placeholder="Enter a breed" type="text" required>
         <input type="submit" value="Show me the dog!"> 
       </form>
-      <p class="results">
-      </p>
+      <p class="js-breed-info"></p>
+      <form class="js-breed-results"></form>
+      <p class="js-photo-results"></p>
     </main>
     <footer>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>

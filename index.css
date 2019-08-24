@@ -6,12 +6,58 @@ body * {
   font-family: 'Roboto', sans-serif;
 }
 
-a :focus {
-  outline: auto 5px -webkit-focus-ring-color;
-  box-shadow: 0;
+main {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  height: 60px;
+}
+
+input {
+  background: white;
+  border: 1pt black solid;
+  box-shadow: 1px 1px;
+}
+
+.secondary {
+  color: gray;
+}
+
+.breed-type {
+  font-weight: 600;
+}
+
+.js-breed-info {
+  font-style: italic;
+  font-size: 11pt;
+}
+
+input:hover {
   cursor: pointer;
+  background: orange ;
+}
+
+input:focus {
+  background: orange ;
+  outline: auto 5px -webkit-focus-ring-color;
+  cursor: pointer;
+}
+
+#breed-input:hover, #breed-input:focus {
+  background: white;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.js-selected-subbreed {
+  background: gray;
 }
 
 img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
